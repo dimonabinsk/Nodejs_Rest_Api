@@ -1,0 +1,31 @@
+###Get a list of all products
+GET http://localhost:3000/products
+
+### Create a product
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "iMac 17.5 Pro",
+  "price": 4999
+}
+
+### GET a product by id
+GET http://localhost:3000/products/642f0de8d0a53a001e073da5
+
+### Update a product by id
+PATCH  http://localhost:3000/products/642f0de8d0a53a001e073da5
+Content-Type: application/json
+
+{
+  "price": 5999
+}
+
+
+### Delete a product by id
+DELETE  http://localhost:3000/products/642f0db2d0a53a001e073da3
+
+### 404 route Not Found
+GET http://localhost:3000/abc_xyz
+
+#hrXWgw4Q127uqZJ3
